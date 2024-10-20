@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-kp8f=3-pzko^cnlnenk*=b2cjo5cvyo_(j63!(j+m8t@d=fyig
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-struk49-airline-9v4iprpjn0s.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-struk49-airline-efnb9lsr1sq.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -71,7 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'airline.wsgi.application'
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = 'Strict'
-CSRF_TRUSTED_ORIGINS = ['https://8000-struk49-airline-9v4iprpjn0s.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = ['https://8000-struk49-airline-efnb9lsr1sq.ws.codeinstitute-ide.net']
 
 
 
