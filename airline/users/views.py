@@ -11,13 +11,13 @@ def index(request):
 
 
 def login_view(request):
-    if request.method == "PODT":
-        username = request.post["username"]
-        password = request.post["password"]
-        user = authenticate(request, username=username, password=passowrd)
+    if request.method == "POST":
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return HttpResponseRedirect(reverse("index.html"))
+            return HttpResponseRedirect(reverse("index"))
         else:
             return render(request, "users/login.html", {
                 "message": "invalid credentials"
@@ -28,4 +28,7 @@ def login_view(request):
 
 
 def logout_view(request):
-    pass
+    logout(request)
+    return render(request, "users/login.html", {
+        "message": "you have logged out"
+    })

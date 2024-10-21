@@ -5,11 +5,13 @@
 
     <ul>
         <li>
-            Username: {{ request.user.ussername }}
+            Username: {{ request.user.username }}
         </li>
         <li>
             Email: {{ request.user.email}}
         </li>
     </ul>
+
+    <a href="{% url 'logout' %}">Click here to log out</a>
 {% endblock %}
 
